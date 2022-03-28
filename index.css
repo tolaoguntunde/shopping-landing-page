@@ -151,12 +151,12 @@ box-shadow: 5px 15px rgb(247, 244, 244);
     margin:20px 40px;
 }
 
-.second-section{
+.second-section,.fourth-section{
     text-align: center;
     width:40%;
 }
 
-.second-section h6{
+.second-section h6, .fourth-section h6{
     color: rgb(185, 179, 179);
 }
 
@@ -176,4 +176,72 @@ a.nav-link.active-nav{
 
 img.card-img-top{
     height:208px;
+}
+
+.rating {
+    width: 180px;
+ }
+ 
+ .rating__star {
+    cursor: pointer;
+    color: orange;
+ }
+
+.mid-banner{
+    display: flex;
+    justify-content: center;
+}
+
+.mid-banner1,.last-banner1,.last-banner2{
+margin-right: 20px;
+}
+
+.mid-banner1 img,.mid-banner2 img{
+    width: 490px;
+
+}
+
+.mid-banner2,.mid-banner1,.last-banner1,.last-banner2,.last-banner3{
+    position: relative;
+}
+
+.mid-carousel{
+    position: absolute;
+    left:60%;
+}
+
+.mid-section{
+    text-align: center;
+    width:40%;
+}
+
+.last-banner{
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    align-items: center;
+
+}
+
+.last-banner1 img,.last-banner2 img, .last-banner3 img{
+    height:248px;
+  }
+
+.last-carousel{
+    position: absolute;
+    left:10%;
+}
+
+.blog{
+    display:flex;
+    justify-content: space-around;
+}
+
+.card-body.bg-light{
+    height:150px;
+    
+}
+
+.card-body{
+    padding-left: 0px;
 }
