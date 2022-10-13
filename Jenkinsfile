@@ -19,7 +19,7 @@ pipeline {
                     sh """
                     #!/bin/bash
 		            echo "connecting to remote or deploy server"	
-                    ssh -i $SSH_CRED -t -o StrictHostKeyChecking=no ubuntu@ec2-35-183-122-243.ca-central-1.compute.amazonaws.com  << EOF
+                    ssh -i $SSH_CRED -t -o StrictHostKeyChecking=no ubuntu@ec2-35-183-122-243.ca-central-1.compute.amazonaws.com << EOF
                     sudo mkdir pearlshop
                     cd pearlshop
                     sudo git clone https://github.com/tolaoguntunde/shopping-landing-page.git .
