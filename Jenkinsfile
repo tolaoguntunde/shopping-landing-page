@@ -5,7 +5,7 @@ pipeline {
         stage('test') {
             steps {
             sh "echo The login user is ${USER}"
-            sh 'echo "Welcome to pearlshop website"'
+            sh "echo Welcome to pearlshop website"
             }
         }
      
