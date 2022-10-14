@@ -20,12 +20,11 @@ pipeline {
                     #!/bin/bash
 		            echo "connecting to remote or deploy server"	
                     ssh -i $SSH_CRED -t -o StrictHostKeyChecking=no ubuntu@3.96.195.60 << EOF
-                    sudo mkdir html
-                    cd html
+                    sudo mkdir pearlshop.com
+                    cd pearlshop.com
                     sudo git clone https://github.com/tolaoguntunde/shopping-landing-page.git .
                     cd ..
-                    sudo rm -rf /var/www/html
-                    sudo cp -r html /var/www/
+                    sudo cp -r pearlshop.com /var/www/
                     echo "exiting terminal"
                     exit
                     << EOF
